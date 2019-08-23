@@ -1,0 +1,71 @@
+git init
+
+git config --global user.name "Polarapu Prasad"
+
+git config --global user.email "Polarapuprasad@gmail.com"
+
+git config --list
+
+Git Phases:-
+----------------
+Workspace
+Staging / index area
+Local repo
+
+........................
+
+touch file-name
+
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "first commit" file1
+git status
+git log
+git show cid
+
+
+
+touch file2 file3 file4
+ls
+git status
+git add file2 file3 file4
+or
+git add .
+or
+git add *
+or
+git add -A
+
+git status
+git commit -m "label" 
+git status
+git log
+git show cid
+
+
+git reset HEAD file-name (staging to workspace)
+git reset --soft cid  (local to staging)
+git reset --mixed cid or git reset HEAD~1 ( local to workspace)
+git reset --hard cid (to delete files and commit)
+
+git clone https://github.com/polarapu/batch46.git
+ls
+cd batch46
+ls
+touch Prasad
+ls
+git status
+git add Prasad
+git commit -m "test file"
+git push
+
+mkdir Prasad
+cd Prasad
+touch f1 f2 f3
+cd ..
+git add .
+git commit -m "sample commit"
+git push
