@@ -69,3 +69,17 @@ cd ..
 git add .
 git commit -m "sample commit"
 git push
+git branch
+
+git branch release1
+git checkout release1
+git branch
+git merge branch-name
+
+git branch -d branch-name
+
+git push path/of/c-repo branch-name
+
+git push origin branch-name
+
+git push origin -d branch-name
