@@ -1,1 +1,4 @@
 check the code and execute that 
+git add .
+git commit -m "Commit message"
+git push origin master

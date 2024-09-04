@@ -1,0 +1,17 @@
+resources:
+  - type: Microsoft.Network/networkSecurityGroups
+    name: myNSG
+    apiVersion: '2021-02-01'
+    location: westus2
+    properties:
+      securityRules:
+        - name: AllowSSH
+          properties:
+            protocol: Tcp
+            sourcePortRange: '*'
+            destinationPortRange: '22'
+            sourceAddressPrefix: '*'
+            destinationAddressPrefix: '*'
+            access: Allow
+            priority: 100
+            direction: Inbound
